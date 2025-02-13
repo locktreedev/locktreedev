@@ -6,11 +6,13 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
-<body class="h-screen w-full bg-linear-to-b from-blue-400 via-cyan-400 to-sky-400 dark:from-blue-700 dark:via-cyan-700 dark:to-sky-700">
+<body class="w-full bg-linear-to-b from-sky-600 to-indigo-600 bg-no-repeat">
 
     <!-- Main contents. -->
-    <main class="flex flex-col space-y-20 py-8 px-20 text-black dark:text-white">
-        <div class="grid grid-cols-3 gap-10 justify-items-center items-center">
+    <main class="flex flex-col py-8 px-20 text-white">
+        <div class="grid grid-cols-3 gap-x-10 gap-y-20 items-center">
+
+            <!-- About the company. -->
             <div class="col-span-2 space-y-1">
                 <h2 id="over-het-bedrijf" class="text-4xl font-medium capitalize">over het bedrijf</h2>
                 <p class="text-lg">
@@ -25,8 +27,39 @@
                     met een passie voor <b>innovatie</b>.
                 </p>
             </div>
-            <div class="col-span-1">
+            <div class="col-span-1 justify-self-center">
                 <div class="w-64 h-64 rounded-full border-2"></div>
+            </div>
+
+            <!-- Our projects. -->
+            <div class="col-span-3 space-y-6">
+                <h2 id="onze-projecten" class="text-4xl font-medium capitalize">onze projecten</h2>
+                <div class="flex flex-wrap gap-5 text-center">
+                    <div class="w-96 h 96 min-w-96 min-h-96 max-w-96 max-h-96 border-2 rounded-md shadow-xl flex flex-col
+                        justify-center -skew-x-6 hover:scale-105 transition cursor-pointer hover:bg-gray-100/20 space-y-2 p-4
+                        relative">
+                        <p class="text-3xl select-none capitalize opacity-70 text-left mt-auto z-10">woningaanbodwebsite</p>
+
+                        <p class="text-xl text-left z-10">
+                            <b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
+                            op basis van <b>woonwensen</b> en <b>profielvoorkeuren</b>, zodat de <b>beste woning</b> bij de 
+                            <b>juiste huurder</b> terechtkomt.
+                        </p>
+
+                        <p class="text-sm select-none opacity-70 mt-auto z-10">
+                            Verwachte uitbrengdatum: april 2025
+                        </p>
+                        
+                        <div class="absolute inset-0 w-full h-full opacity-20
+                            bg-[url(assets/images/woning.jpg)] bg-fixed bg-center bg-cover bg-no-repeat"></div>
+                    </div>
+                    <div class="w-96 h 96 min-w-96 min-h-96 max-w-96 max-h-96 border-2 rounded-md shadow-xl flex flex-row items-center
+                        justify-center -skew-x-6 hover:scale-105 transition cursor-pointer hover:bg-gray-100/20">
+                        <p class="text-3xl select-none capitalize opacity-70">
+                            🚧 binnenkort meer...
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
