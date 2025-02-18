@@ -1,3 +1,10 @@
+const languagesContainer = document.getElementById('languages');
+const dynamicLanguageContainers = document.querySelectorAll('[data-translate-key]');
+
+languagesContainer.addEventListener('change', () => {
+    translate();
+});
+
 const setLocale = () => {
     let userLocale = new Intl.DateTimeFormat().resolvedOptions().locale;
 
@@ -20,7 +27,9 @@ const translate = (initialCall = false) => {
         toggleLocale();
     }
 
-    document.querySelectorAll('[data-translate-key]').forEach(element => {
+    languagesContainer.value = locale;
+
+    dynamicLanguageContainers.forEach(element => {
         element.innerHTML = translations[locale][element.dataset.translateKey];
     });
 };
@@ -29,6 +38,9 @@ let locale = localStorage.getItem('locale') ?? setLocale();
 
 const translations = {
     nl: {
+        aboutTheCompanyLink: 'over het bedrijf',
+        ourProjectsLink: 'onze projecten',
+        contactAndFeedbackLink: 'contact',
         aboutTheCompany: 'over het bedrijf',
         aboutTheCompanyDescription: `<b>LocktreeDev</b> is een <b>eenmanszaak</b> opgericht door <b>Edwin Asselman (Slotboom)</b> 
         en richt zich op het ontwikkelen van <b>websites</b> die bestaande <b>producten en processen verbeteren</b>. 
@@ -54,6 +66,9 @@ const translations = {
         contactAndFeedbackSend: 'Versturen'
     },
     eng: {
+        aboutTheCompanyLink: 'about the company',
+        ourProjectsLink: 'our projects',
+        contactAndFeedbackLink: 'contact',
         aboutTheCompany: 'about the company',
         aboutTheCompanyDescription: `<b>LocktreeDev</b> is a <b>sole proprietorship</b> founded by <b>Edwin Asselman (Slotboom)</b>  
         and focuses on developing <b>websites</b> that improve existing <b>products and processes</b>.  
