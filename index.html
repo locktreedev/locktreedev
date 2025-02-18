@@ -6,9 +6,41 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="assets/js/form.js" defer></script>
     <script src="assets/js/translations.js" defer></script>
+    <script src="assets/js/getCurrentYear.js" defer></script>
     <title>Document</title>
 </head>
 <body class="w-full bg-linear-to-b from-sky-600 to-indigo-600 bg-no-repeat">
+
+    <!-- Navigation bar -->
+    <header class="text-white sticky top-0 z-100">
+        <nav class="w-full h-20 flex flex-row items-center justify-between bg-blue-500 px-10">
+            <a href="">
+                <h1 class="text-4xl font-medium">LocktreeDev</h1>
+            </a>
+
+            <div class="flex flex-row space-x-2 capitalize">
+                <a class="p-2 hover:bg-blue-400 cursor-pointer" 
+                    data-translate-key="aboutTheCompanyLink" href="#over-het-bedrijf">
+                    over het bedrijf
+                </a>
+                <a class="p-2 hover:bg-blue-400 cursor-pointer" 
+                    data-translate-key="ourProjectsLink" href="#onze-projecten">
+                    onze projecten
+                </a>
+                <a class="p-2 hover:bg-blue-400 cursor-pointer" 
+                    data-translate-key="contactAndFeedbackLink" href="#contact-opnemen-&-feedback">
+                    contact
+                </a>
+
+                <select class="text-white bg-blue-400 p-2 selection:bg-cyan-400/80 hover:cursor-pointer
+                    selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 hover:bg-blue-400/60
+                    -outline-offset-4 outline-double" name="languages" id="languages">
+                    <option value="nl">NL</option>
+                    <option value="eng">ENG</option>
+                </select>
+            </div>
+        </nav>
+    </header>
 
     <!-- Main contents. -->
     <main class="flex flex-col py-8 px-20 text-white">
@@ -114,5 +146,13 @@
             </form>
         </div>
     </main>
+
+    <!-- Footer of the page. -->
+    <footer class="w-full h-10 flex flex-row items-center justify-center bg-blue-500">
+        <p class="text-sm text-white/80 select-none">
+            &copy; 2025 - <span data-current-year-key=""></span>.
+            LocktreeDev. All Rights Reserved
+        </p>
+    </footer>
 </body>
 </html>
