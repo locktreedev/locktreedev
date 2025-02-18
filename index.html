@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/form.js" defer></script>
+    <script src="assets/js/translations.js" defer></script>
     <title>Document</title>
 </head>
 <body class="w-full bg-linear-to-b from-sky-600 to-indigo-600 bg-no-repeat">
@@ -15,9 +16,11 @@
 
             <!-- About the company. -->
             <div class="col-span-2 space-y-1">
-                <h2 id="over-het-bedrijf" class="text-4xl font-medium capitalize">over het bedrijf</h2>
+                <h2 id="over-het-bedrijf" data-translate-key="aboutTheCompany" class="text-4xl font-medium capitalize">
+                    over het bedrijf
+                </h2>
 
-                <p class="text-lg">
+                <p data-translate-key="aboutTheCompanyDescription" class="text-lg">
                     <b>LocktreeDev</b> is een <b>eenmanszaak</b> opgericht door <b>Edwin Asselman (Slotboom)</b> 
                     en richt zich op het ontwikkelen van <b>websites</b> die bestaande <b>producten en processen verbeteren</b>. 
                     Het begon in <b>2021</b> als een <b>concept</b>, onder de naam <b>Locktree JavaScript</b>, waarbij het eerste 
@@ -35,21 +38,24 @@
 
             <!-- Our projects. -->
             <div class="col-span-3 space-y-6">
-                <h2 id="onze-projecten" class="text-4xl font-medium capitalize">onze projecten</h2>
+                <h2 id="onze-projecten" data-translate-key="ourProjects" class="text-4xl font-medium capitalize">
+                    onze projecten
+                </h2>
 
                 <div class="flex flex-wrap gap-5 text-center">
                     <div class="w-96 h 96 min-w-96 min-h-96 max-w-96 max-h-96 border-2 rounded-md shadow-xl flex flex-col
                         justify-center -skew-x-6 hover:scale-105 transition cursor-pointer hover:bg-gray-100/20 space-y-2 p-4
                         relative">
-                        <p class="text-3xl select-none capitalize opacity-70 text-left mt-auto z-10">woningaanbodwebsite</p>
+                        <p data-translate-key="firstProjectTitle" 
+                            class="text-3xl select-none capitalize opacity-70 text-left mt-auto z-10">woningaanbodwebsite</p>
 
-                        <p class="text-xl text-left z-10">
+                        <p data-translate-key="firstProjectDescription" class="text-xl text-left z-10">
                             <b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
                             op basis van <b>woonwensen</b> en <b>profielvoorkeuren</b>, zodat de <b>beste woning</b> bij de 
                             <b>juiste huurder</b> terechtkomt.
                         </p>
 
-                        <p class="text-sm select-none opacity-70 mt-auto z-10">
+                        <p data-translate-key="firstProjectReleaseDate" class="text-sm select-none opacity-70 mt-auto z-10">
                             Verwachte uitbrengdatum: april 2025
                         </p>
                         
@@ -58,7 +64,7 @@
                     </div>
                     <div class="w-96 h 96 min-w-96 min-h-96 max-w-96 max-h-96 border-2 rounded-md shadow-xl flex flex-row items-center
                         justify-center -skew-x-6 hover:scale-105 transition cursor-pointer hover:bg-gray-100/20">
-                        <p class="text-3xl select-none capitalize opacity-70">
+                        <p data-translate-key="moreComingSoon" class="text-3xl select-none capitalize opacity-70">
                             🚧 binnenkort meer...
                         </p>
                     </div>
@@ -68,40 +74,43 @@
             <!-- Contact form. -->
             <form id="form" class="col-span-3 text-left flex flex-col space-y-4 mx-auto">
                 <div class="space-y-1">
-                    <h2 id="contact-opnemen-&-feedback" class="text-4xl font-medium capitalize">contact opnemen & feedback</h2>
+                    <h2 id="contact-opnemen-&-feedback" data-translate-key="contactAndFeedback" 
+                        class="text-4xl font-medium capitalize">contact opnemen & feedback</h2>
                     
-                    <p class="italic select-none opacity-70">
+                    <p data-translate-key="contactAndFeedbackDescription" class="italic select-none opacity-70">
                         Vul het formulier in en we nemen zo snel mogelijk contact met je op via het door jou opgegeven e-mailadres.
                     </p>
                 </div>
 
                 <div class="flex flex-col space-y-1">
-                    <label for="name" class="font-semibold">Volledige naam:</label>
-                    <input type="text" name="name" id="name" placeholder="Naam..." spellcheck="false" autocomplete="off"
+                    <label for="name" data-translate-key="contactAndFeedbackName" class="font-semibold">Volledige naam:</label>
+                    <input type="text" name="name" id="name" spellcheck="false" autocomplete="off"
                         class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                         selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
                         -outline-offset-4 outline-double" required="true" />
                 </div>
 
                 <div class="flex flex-col space-y-1">
-                    <label for="email" class="font-semibold">Emailadres:</label>
-                    <input type="email" name="email" id="email" placeholder="Emailadres..." spellcheck="false" autocomplete="off"
+                    <label for="email" data-translate-key="contactAndFeedbackEmail" class="font-semibold">Emailadres:</label>
+                    <input type="email" name="email" id="email" spellcheck="false" autocomplete="off"
                         class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                         selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
                         -outline-offset-4 outline-double" required="true" />
                 </div>
 
                 <div class="flex flex-col space-y-1">
-                    <label for="message" class="font-semibold">Bericht:</label>
-                    <textarea name="message" id="message" rows="5" placeholder="Bericht..." spellcheck="false" autocomplete="off"
+                    <label for="message" data-translate-key="contactAndFeedbackMessage" class="font-semibold">Bericht:</label>
+                    <textarea name="message" id="message" rows="5" spellcheck="false" autocomplete="off"
                         class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                         selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
                         -outline-offset-4 outline-double" required="true"></textarea>
                 </div>
 
-                <button type="submit" class="p-2 w-24 rounded-md selection:bg-cyan-400/80 
-                    selection:text-white outline-none bg-green-500 hover:bg-green-400 cursor-pointer
-                    -outline-offset-4 outline-double">Versturen</button>
+                <button type="submit" data-translate-key="contactAndFeedbackSend" 
+                    class="p-2 w-24 rounded-md selection:bg-cyan-400/80 selection:text-white outline-none 
+                    bg-green-500 hover:bg-green-400 cursor-pointer -outline-offset-4 outline-double">
+                    Versturen
+                </button>
             </form>
         </div>
     </main>
