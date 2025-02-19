@@ -1,7 +1,12 @@
 const languagesContainer = document.getElementById('languages');
+const languagesHamburgerContainer = document.getElementById('languages-hamburger-menu');
 const dynamicLanguageContainers = document.querySelectorAll('[data-translate-key]');
 
 languagesContainer.addEventListener('change', () => {
+    translate();
+});
+
+languagesHamburgerContainer.addEventListener('change', () => {
     translate();
 });
 
@@ -28,6 +33,7 @@ const translate = (initialCall = false) => {
     }
 
     languagesContainer.value = locale;
+    languagesHamburgerContainer.value = locale;
 
     dynamicLanguageContainers.forEach(element => {
         element.innerHTML = translations[locale][element.dataset.translateKey];
@@ -41,7 +47,12 @@ const translations = {
         aboutTheCompanyLink: 'over het bedrijf',
         ourProjectsLink: 'onze projecten',
         contactAndFeedbackLink: 'contact',
+        selectLanguage: 'selecteer taal:',
+        aboutTheCompanyHamburgerLink: 'over het bedrijf',
+        ourProjectsHamburgerLink: 'onze projecten',
+        contactAndFeedbackHamburgerLink: 'contact',
         aboutTheCompany: 'over het bedrijf',
+        contactAndFeedbackHamburgerLink: 'contact',
         aboutTheCompanyDescription: `<b>LocktreeDev</b> is een <b>eenmanszaak</b> opgericht door <b>Edwin Asselman (Slotboom)</b> 
         en richt zich op het ontwikkelen van <b>websites</b> die bestaande <b>producten en processen verbeteren</b>. 
         Het begon in <b>2021</b> als een <b>concept</b>, onder de naam <b>Locktree JavaScript</b>, waarbij het eerste 
@@ -69,6 +80,10 @@ const translations = {
         aboutTheCompanyLink: 'about the company',
         ourProjectsLink: 'our projects',
         contactAndFeedbackLink: 'contact',
+        selectLanguage: 'select language:',
+        aboutTheCompanyHamburgerLink: 'about the company',
+        ourProjectsHamburgerLink: 'our projects',
+        contactAndFeedbackHamburgerLink: 'contact',
         aboutTheCompany: 'about the company',
         aboutTheCompanyDescription: `<b>LocktreeDev</b> is a <b>sole proprietorship</b> founded by <b>Edwin Asselman (Slotboom)</b>  
         and focuses on developing <b>websites</b> that improve existing <b>products and processes</b>.  
