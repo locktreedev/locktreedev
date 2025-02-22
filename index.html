@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LocktreeDev is a sole proprietorship founded by Edwin Asselman (Slotboom) 
+        and focuses on developing websites that improve existing products and processes. 
+        It started in 2021 as a concept under the name Locktree JavaScript, 
+        where the first product was developed: a solution to customize standard JavaScript alerts. 
+        In September 2024, LocktreeDev officially launched, along with the development 
+        of our real estate listing website. With a solid background in software development, 
+        including a completed education and a diploma obtained in 2024, Edwin combines 
+        technical expertise with a passion for innovation.">
+
+    <meta property="og:title" content="LocktreeDev - Software Development">
+    <meta property="og:description" content="Web development and software solutions for process optimization.">
+    <meta property="og:image" content="https://locktree.dev/assets/images/logo.svg">
+    <meta property="og:url" content="https://locktree.dev">
+    <meta name="twitter:card" content="summary_large_image">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="canonical" href="https://locktree.dev">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="assets/js/form.js" defer></script>
     <script src="assets/js/translations.js" defer></script>
     <script src="assets/js/getCurrentYear.js" defer></script>
     <script src="assets/js/hamburgerMenu.js" defer></script>
-    <title>Document</title>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "LocktreeDev",
+          "url": "https://locktree.dev",
+          "logo": "https://locktree.dev/assets/images/logo.svg",
+          "description": "Web development and software solutions for process optimization."
+        }
+        </script>
+    <title>LocktreeDev - Software Development</title>
 </head>
 <body class="w-full bg-linear-to-b from-sky-600 to-indigo-600 bg-no-repeat">
 
@@ -17,8 +47,9 @@
     <header class="text-white sticky top-0 z-100">
         <nav class="w-full">
             <div class="bg-blue-500 px-4 md:px-10 h-20 flex flex-row items-center justify-between">
-                <a href="">
-                    <h1 class="hidden sm:block text-4xl font-medium">LocktreeDev</h1>
+                <a href="https://www.locktree.dev" class="flex flex-row items-center space-x-3">
+                    <img src="assets/images/logo.svg" alt="locktree" class="w-14 h-14 border-2 rounded-full" />
+                    <h1 class="text-4xl font-medium">LocktreeDev</h1>
                 </a>
 
                 <div class="hidden md:flex md:flex-row space-x-2 capitalize">
@@ -27,11 +58,11 @@
                         over het bedrijf
                     </a>
                     <a class="p-2 hover:bg-blue-400 cursor-pointer"
-                        data-translate-key="ourProjectsLink" href="#onze-projecten">
-                        onze projecten
+                        data-translate-key="ourProjectsLink" href="#projecten">
+                        projecten
                     </a>
                     <a class="p-2 hover:bg-blue-400 cursor-pointer"
-                        data-translate-key="contactAndFeedbackLink" href="#contact-opnemen-&-feedback">
+                        data-translate-key="contactAndFeedbackLink" href="#contact-&-feedback">
                         contact
                     </a>
                     <select class="text-white bg-blue-400 p-2 selection:bg-cyan-400/80 hover:cursor-pointer
@@ -43,7 +74,9 @@
                 </div>
 
                 <!-- Hamburger menu. -->
-                <span id="hamburger-menu" class="block md:hidden text-5xl select-none cursor-pointer hover:bg-blue-400 p-2">☰</span>
+                <img id="hamburger-menu" src="assets/images/list.svg" alt="hamburger-menu"
+                    class="block md:hidden w-full h-14 max-w-14 max-h-14 select-none cursor-pointer hover:bg-blue-400 p-2
+                    min-w-14 min-h-14" />
             </div>
 
             <div id="hamburger-menu-container" class="flex flex-col hidden bg-blue-400 p-2 w-full justify-center capitalize">
@@ -52,19 +85,19 @@
                     over het bedrijf
                 </a>
                 <a class="p-2 hover:bg-blue-300 cursor-pointer"
-                    data-translate-key="ourProjectsHamburgerLink" href="#onze-projecten">
-                    onze projecten
+                    data-translate-key="ourProjectsHamburgerLink" href="#projecten">
+                    projecten
                 </a>
                 <a class="p-2 hover:bg-blue-300 cursor-pointer"
-                    data-translate-key="contactAndFeedbackHamburgerLink" href="#contact-opnemen-&-feedback">
+                    data-translate-key="contactAndFeedbackHamburgerLink" href="#contact-&-feedback">
                     contact
                 </a>
 
                 <div class="p-2 flex flex-row space-x-2 items-center">
                     <label data-translate-key="selectLanguage" for="languages-hamburger-menu">Selecteer taal:</label>
 
-                    <select class="text-white bg-blue-400 p-2 selection:bg-cyan-400/80 hover:cursor-pointer
-                        selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 hover:bg-blue-400/60
+                    <select class="!text-white bg-blue-400 p-2 selection:bg-cyan-400/80 hover:cursor-pointer
+                        !selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 hover:bg-blue-400/60
                         -outline-offset-4 outline-double" name="languages-hamburger-menu" id="languages-hamburger-menu">
                         <option value="nl">NL</option>
                         <option value="eng">ENG</option>
@@ -93,25 +126,26 @@
                     Het begon in <b>2021</b> als een <b>concept</b>, onder de naam <b>Locktree JavaScript</b>, waarbij het eerste 
                     <b>product</b> werd ontwikkeld: een oplossing om <b>standaard JavaScript-alerts aan te passen</b>.
                     Pas in <b>september van 2024</b> is <b>LocktreeDev</b> officieel van start gegaan, tegelijkertijd met de 
-                    ontwikkeling van onze <b>woningaanbodwebsite</b>, die later dit jaar wordt gelanceerd. 
+                    ontwikkeling van LocktreeDev's <b>woningaanbodwebsite</b>, die later dit jaar wordt gelanceerd. 
                     Met een solide achtergrond in <b>softwareontwikkeling</b> - inclusief een <b>afgeronde opleiding</b> en 
                     <b>diploma</b> behaald in <b>2024</b> - combineert <b>Edwin</b> technische <b>expertise</b> 
                     met een passie voor <b>innovatie</b>.
                 </p>
             </div>
             <div class="col-span-1 justify-self-center hidden lg:block">
-                <div class="w-64 h-64 rounded-full border-2"></div>
+                <div class="w-64 h-64 rounded-full border-2 bg-[url('assets/images/edwin-zwart.jpg')] 
+                    bg-cover bg-no-repeat bg-right-top">
+                </div>
             </div>
-
 
             <!-- Our projects. -->
             <div class="col-span-3 space-y-6">
                 <hr class="sm:mb-16">
 
                 <div class="flex flex-row justify-center xl:justify-start space-x-1 sm:mb-12">
-                    <a href="#onze-projecten" class="hidden sm:block text-4xl font-medium hover:text-gray-200">#</a>
-                    <h2 id="onze-projecten" data-translate-key="ourProjects" class="text-4xl font-medium capitalize">
-                        onze projecten
+                    <a href="#projecten" class="hidden sm:block text-4xl font-medium hover:text-gray-200">#</a>
+                    <h2 id="projecten" data-translate-key="ourProjects" class="text-4xl font-medium capitalize">
+                        projecten
                     </h2>
                 </div>
 
@@ -146,9 +180,13 @@
                         shadow-xl flex flex-col justify-center md:-skew-x-6 hover:scale-105 transition cursor-pointer 
                         w-64 h-64 min-w-64 min-h-64 max-w-64 max-h-64 hover:bg-gray-100/20 space-y-2 p-4
                         relative">
-                        <p data-translate-key="moreComingSoon" class="text-3xl select-none capitalize opacity-70">
-                            🚧 binnenkort meer...
-                        </p>
+                        <div class="select-none opacity-70 flex flex-row items-center space-x-2 justify-center">
+                            <img src="assets/images/barricade.svg" alt="barricade" class="invert w-14 h-14 min-w-14 min-h-14
+                                max-w-14 max-h-14 hidden md:block" />
+                            <p data-translate-key="moreComingSoon" class="text-3xl capitalize text-start md:text-center">
+                                binnenkort meer...
+                            </p>
+                        </div>
                     </div>
 
                     <div class="hidden xl:flex xl:flex-row space-x-4 items-center px-10 ml-auto">
@@ -180,9 +218,9 @@
                 <form id="form" class="col-span-4 lg:col-span-2 text-left flex flex-col space-y-4 gap-2 sm:mx-12">
                     <div class="space-y-1">
                         <div class="flex flex-row items-center space-x-1">
-                            <a href="#contact-opnemen-&-feedback" class="hidden sm:block text-4xl font-medium hover:text-gray-200">#</a>
-                            <h2 id="contact-opnemen-&-feedback" data-translate-key="contactAndFeedback"
-                                class="text-4xl font-medium capitalize">contact opnemen & feedback</h2>
+                            <a href="#contact-&-feedback" class="hidden sm:block text-4xl font-medium hover:text-gray-200">#</a>
+                            <h2 id="contact-&-feedback" data-translate-key="contactAndFeedback"
+                                class="text-4xl font-medium capitalize">contact & feedback</h2>
                         </div>
                         
                         <p data-translate-key="contactAndFeedbackDescription" class="italic select-none opacity-70">
