@@ -1,4 +1,4 @@
 const currentYear = new Date().getFullYear();
 const container = document.querySelector('[data-current-year-key]');
 
-container.innerHTML = currentYear;
+currentYear > 2025 ? container.innerHTML = `2025 - ${currentYear}` : container.innerHTML = currentYear;
