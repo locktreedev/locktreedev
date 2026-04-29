@@ -45,11 +45,11 @@ let locale = localStorage.getItem('locale') ?? setLocale();
 const translations = {
     nl: {
         aboutTheCompanyLink: 'over het bedrijf',
-        ourProjectsLink: 'projecten',
+        ourProjectsLink: 'toekomstige projecten',
         contactAndFeedbackLink: 'contact',
         selectLanguage: 'selecteer taal:',
         aboutTheCompanyHamburgerLink: 'over het bedrijf',
-        ourProjectsHamburgerLink: 'projecten',
+        ourProjectsHamburgerLink: 'toekomstige projecten',
         contactAndFeedbackHamburgerLink: 'contact',
         aboutTheCompany: 'over het bedrijf',
         contactAndFeedbackHamburgerLink: 'contact',
@@ -62,7 +62,7 @@ const translations = {
         Met een solide achtergrond in <b>softwareontwikkeling</b> - inclusief een <b>afgeronde opleiding</b> en 
         <b>diploma</b> behaald in <b>2024</b> - combineert <b>Edwin</b> technische <b>expertise</b> 
         met een passie voor <b>innovatie</b>.`,
-        ourProjects: 'projecten',
+        ourProjects: 'toekomstige projecten',
         firstProjectTitle: 'woningaanbodwebsite',
         firstProjectDescription: `<b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
         op basis van <b>woonwensen</b> en <b>profielvoorkeuren</b>, zodat de <b>beste woning</b> bij de 
@@ -77,11 +77,11 @@ const translations = {
     },
     eng: {
         aboutTheCompanyLink: 'about the company',
-        ourProjectsLink: 'projects',
+        ourProjectsLink: 'future projects',
         contactAndFeedbackLink: 'contact',
         selectLanguage: 'select language:',
         aboutTheCompanyHamburgerLink: 'about the company',
-        ourProjectsHamburgerLink: 'projects',
+        ourProjectsHamburgerLink: 'future projects',
         contactAndFeedbackHamburgerLink: 'contact',
         aboutTheCompany: 'about the company',
         aboutTheCompanyDescription: `<b>LocktreeDev</b> is a <b>sole proprietorship</b> founded by <b>Edwin Asselman (Slotboom)</b>  
@@ -93,7 +93,7 @@ const translations = {
         With a solid background in <b>software development</b> - including a <b>completed education</b> and  
         <b>degree</b> obtained in <b>2024</b> - <b>Edwin</b> combines technical <b>expertise</b>  
         with a passion for <b>innovation</b>.`,
-        ourProjects: 'projects',
+        ourProjects: 'future projects',
         firstProjectTitle: 'housing listing website',
         firstProjectDescription: `<b>LocktreeDev's efficient housing listing platform</b> matches <b>tenants</b> and <b>landlords</b>  
         based on <b>housing preferences</b> and <b>profile criteria</b>, ensuring the <b>best home</b>  
