@@ -16,3 +16,7 @@
 .clip-triangle {
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+#over-het-bedrijf, #toekomstige-projecten, #contact-en-feedback {
+    scroll-margin-top: 110px;
+}
