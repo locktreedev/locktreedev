@@ -67,6 +67,7 @@ const translations = {
         firstProjectDescription: `<b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
         op basis van <b>woonwensen</b> en <b>profielvoorkeuren</b>, zodat de <b>beste woning</b> bij de 
         <b>juiste huurder</b> terechtkomt.`,
+        firstProjectReleaseDate: 'Verwachte uitbrengdatum: april 2025',
         moreComingSoon: 'binnenkort meer...',
         contactAndFeedback: 'contact & feedback',
         contactAndFeedbackDescription: 'Vul het formulier in en we nemen zo snel mogelijk contact met je op via het door jou opgegeven e-mailadres.',
@@ -98,6 +99,7 @@ const translations = {
         firstProjectDescription: `<b>LocktreeDev's efficient housing listing platform</b> matches <b>tenants</b> and <b>landlords</b>  
         based on <b>housing preferences</b> and <b>profile criteria</b>, ensuring the <b>best home</b>  
         reaches the <b>right tenant</b>.`,
+        firstProjectReleaseDate: 'Expected release date: April 2025',
         moreComingSoon: 'more coming soon...',
         contactAndFeedback: 'contact & feedback',
         contactAndFeedbackDescription: 'Fill out the form, and we will get in touch with you as soon as possible via the email address you provided.',
