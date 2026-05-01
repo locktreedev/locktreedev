@@ -4,6 +4,10 @@ const notificationBar = document.querySelector('[data-notification-key]');
 form.addEventListener('submit', async(event) => {
     event.preventDefault();
 
+    if (form.querySelector('button[type="submit"]').disabled) {
+        return;
+    }
+
     const name = document.getElementById('name');
     const email = document.getElementById('email');
     const message = document.getElementById('message');
