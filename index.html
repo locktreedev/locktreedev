@@ -210,37 +210,38 @@
                         </div>
                         
                         <p data-translate-key="contactAndFeedbackDescription" class="italic select-none opacity-70">
-                            Vul het formulier in en we nemen zo snel mogelijk contact met je op via het door jou opgegeven e-mailadres.
+                            The contact form is currently disabled. We apologize for the inconvenience.
                         </p>
                     </div>
     
-                    <div class="flex flex-col space-y-1">
+                    <div class="flex flex-col space-y-1 opacity-50">
                         <label for="name" data-translate-key="contactAndFeedbackName" class="font-semibold">Volledige naam:</label>
                         <input type="text" name="name" id="name" spellcheck="false" autocomplete="off"
                             class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                             selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
-                            -outline-offset-4 outline-double" required="true" />
+                            -outline-offset-4 outline-double disabled:bg-gray-300 disabled:cursor-not-allowed" required="true" disabled />
                     </div>
     
-                    <div class="flex flex-col space-y-1">
+                    <div class="flex flex-col space-y-1 opacity-50">
                         <label for="email" data-translate-key="contactAndFeedbackEmail" class="font-semibold">Emailadres:</label>
                         <input type="email" name="email" id="email" spellcheck="false" autocomplete="off"
                             class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                             selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
-                            -outline-offset-4 outline-double" required="true" />
+                            -outline-offset-4 outline-double disabled:bg-gray-300 disabled:cursor-not-allowed" required="true" disabled />
                     </div>
     
-                    <div class="flex flex-col space-y-1">
+                    <div class="flex flex-col space-y-1 opacity-50">
                         <label for="message" data-translate-key="contactAndFeedbackMessage" class="font-semibold">Bericht:</label>
                         <textarea name="message" id="message" rows="5" spellcheck="false" autocomplete="off"
                             class="border-2 p-2 w-full rounded-md selection:bg-cyan-400/80 
                             selection:text-white outline-none active:outline-cyan-500 focus:outline-cyan-500 
-                            -outline-offset-4 outline-double" required="true"></textarea>
+                            -outline-offset-4 outline-double disabled:bg-gray-300 disabled:cursor-not-allowed" required="true" disabled></textarea>
                     </div>
     
                     <button type="submit" data-translate-key="contactAndFeedbackSend" 
                         class="p-2 w-24 rounded-md selection:bg-cyan-400/80 selection:text-white outline-none 
-                        bg-green-500 hover:bg-green-400 cursor-pointer -outline-offset-4 outline-double">
+                        bg-green-500 hover:bg-green-400 cursor-pointer -outline-offset-4 outline-double 
+                        disabled:bg-gray-400 disabled:cursor-not-allowed" disabled>
                         Versturen
                     </button>
                 </form>
