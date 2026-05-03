@@ -1,0 +1,23 @@
+{
+  "name": "locktreedev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./css/style.css --minify && node version-assets.js",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch",
+    "clean": "rm -rf dist css/style.*.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github:roland949/locktreedev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.4",
+    "tailwindcss": "^4.2.4"
+  }
+}
