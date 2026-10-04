@@ -63,8 +63,10 @@ const translations = {
         <b>diploma</b> behaald in <b>2024</b> - combineert <b>Edwin</b> technische <b>expertise</b> 
         met een passie voor <b>innovatie</b>.`,
         ourProjects: 'toekomstige projecten',
-        firstProjectTitle: 'woningaanbodwebsite',
-        firstProjectDescription: `<b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
+        firstProjectTitle: 'Swift: for Google Calendar',
+        firstProjectDescription: `Binnenkort beschikbaar in de Chrome Web Store...`,
+        secondProjectTitle: `woningaanbodwebsite`,
+        secondProjectDescription: `<b>Ons efficiënte woningaanbodplatform</b> matcht <b>huurders</b> en <b>verhuurders</b> 
         op basis van <b>woonwensen</b> en <b>profielvoorkeuren</b>, zodat de <b>beste woning</b> bij de 
         <b>juiste huurder</b> terechtkomt.`,
         moreComingSoon: 'binnenkort meer...',
@@ -94,8 +96,10 @@ const translations = {
         <b>degree</b> obtained in <b>2024</b> - <b>Edwin</b> combines technical <b>expertise</b>  
         with a passion for <b>innovation</b>.`,
         ourProjects: 'future projects',
-        firstProjectTitle: 'housing listing website',
-        firstProjectDescription: `<b>LocktreeDev's efficient housing listing platform</b> matches <b>tenants</b> and <b>landlords</b>  
+        firstProjectTitle: 'Swift: for Google Calendar',
+        firstProjectDescription: `Coming soon to the Chrome Web Store...`,
+        secondProjectTitle: `housing listing website`,
+        secondProjectDescription: `<b>LocktreeDev's efficient housing listing platform</b> matches <b>tenants</b> and <b>landlords</b>  
         based on <b>housing preferences</b> and <b>profile criteria</b>, ensuring the <b>best home</b>  
         reaches the <b>right tenant</b>.`,
         moreComingSoon: 'more coming soon...',
